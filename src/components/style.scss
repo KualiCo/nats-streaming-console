@@ -1,0 +1,148 @@
+@import '../globals';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.column-view {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+}
+
+.menu-wrapper {
+  background-color: get-color('card', $md-light-theme);
+  margin: 0 7px 0 0;
+}
+
+.menu-list {
+  min-width: 400px;
+}
+
+.menu-input {
+  padding: 0 7px;
+}
+
+.menu-input button {
+  margin-top: -13px;
+}
+
+.dashboard-widget-one-by-one {
+  background-color: get-color('card', $md-light-theme);
+  display: flex;
+  flex-basis: 20%;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 220px;
+  min-width: 220px;
+  margin: 4px;
+}
+
+.dashboard-widget-four-by-one {
+  background-color: get-color('card', $md-light-theme);
+  display: flex;
+  flex-basis: 75%;
+  flex-direction: column;
+  flex-grow: 4;
+  min-height: 220px;
+  min-width: 320px;
+  margin: 4px;
+}
+
+.dashboard-widget-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 5;
+  justify-content: center;
+  padding: 15px;
+}
+
+.dashboard-widget-content .number {
+  color: white;
+  display: block;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.dashboard-widget-content .text {
+  color: #eee;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.dashboard-footer {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.detail-dialog {
+  width: 60%;
+}
+
+  @media (min-width: 415px) and (max-width: 1024px) {
+  .detail-dialog {
+    width: 80%;
+  }
+
+  .menu-wrapper {
+    width: 400px;
+  }
+
+  .menu-list {
+    min-width: 400px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 414px) {
+  .detail-dialog {
+    width: 80%;
+  }
+
+  .menu-wrapper {
+    width: 352px;
+  }
+
+  .menu-list {
+    min-width: 352px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 375px) {
+  .detail-dialog {
+    width: 80%;
+  }
+
+  .menu-wrapper {
+    width: 312px;
+  }
+
+  .menu-list {
+    min-width: 312px;
+  }
+}
+
+@media (max-width: 360px) {
+  .detail-dialog {
+    width: 80%;
+  }
+
+  .menu-wrapper {
+    width: 300px;
+  }
+
+  .menu-list {
+    min-width: 300px;
+  }
+}
