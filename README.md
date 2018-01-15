@@ -27,7 +27,8 @@ A web console for Nats Streaming Server.
 There are three ways to use Nats Streaming Console:
 
 ## Docker
-The docker image is available from somewhere public...
+The docker image is available from dockerhub
+[https://hub.docker.com/r/kuali/nats-streaming-console](https://hub.docker.com/r/kuali/nats-streaming-console)
 
 ## Electron App
 Coming soon
