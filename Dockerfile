@@ -12,6 +12,7 @@ ADD public $CODE/public
 ADD server $CODE/server
 ADD src $CODE/src
 
+RUN yarn build-css
 RUN yarn build
 
 EXPOSE 8282
