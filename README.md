@@ -39,6 +39,7 @@ If you just want to build and run it. That is pretty easy too. You will need git
 git clone https://github.com/KualiCo/nats-streaming-console.git
 cd nats-streaming-console
 npm install
+npm run build-css
 npm run build
 node server
 ```
