@@ -2,6 +2,9 @@ const axios = require('axios')
 const { getNerveInstance, options } = require('../nats-ss')
 
 exports.getServerOptions = async (req, res) => {
+  if (options.server.split('@').length > 1) {
+    options.server = `nats://${options.server.split('@')[1]}`
+  }
   res.status(200).send(options)
 }
 
